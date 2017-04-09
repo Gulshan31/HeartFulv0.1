@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2016 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<!-- Layout for the Wednesday fragment -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:background="@color/colorAccent"
+        android:text="Sign Up With"
+        android:textSize="32sp"
+        android:textColor="#FFF"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
+    <EditText
+    android:id="@+id/name"
+    android:layout_width="match_parent"
+    android:hint="Name"
+        android:padding="12dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:background="@drawable/text_field_design"
+    android:maxLines="1"
+    android:layout_marginTop="20dp"
+    android:layout_height="50dp" />
+    <EditText
+        android:id="@+id/email"
+        android:padding="12dp"
+        android:layout_width="match_parent"
+        android:hint="Email"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/text_field_design"
+        android:maxLines="1"
+        android:layout_marginTop="20dp"
+        android:layout_height="50dp" />
+    <EditText
+        android:id="@+id/password"
+        android:padding="12dp"
+        android:layout_width="match_parent"
+        android:hint="Password"
+        android:password="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/text_field_design"
+        android:maxLines="1"
+        android:layout_marginTop="20dp"
+        android:layout_height="50dp" />
+    <Button
+        android:id="@+id/sing_up"
+        android:text="Sign Up"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/custom_button"
+        android:textAllCaps="false"
+        android:textColor="#283593"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/appCompatTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Or Sign In with"
+        android:textSize="30dp"
+        android:textColor="@color/colorPrimaryDark"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageButton
+            android:id="@+id/info"
+            android:layout_weight=".5"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/fb_singup_button"
+            android:src="@drawable/ic_fb"
+            android:textAllCaps="false"
+            android:textColor="#283593"
+            android:textSize="30sp" />
+
+        <ImageButton
+            android:id="@+id/tw"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="35dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/twitter_sign_up_button"
+            android:src="@drawable/ic_twitter"
+            android:textAllCaps="false"
+            android:textColor="#283593"
+            android:textSize="30sp" />
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>
